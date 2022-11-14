@@ -12,6 +12,8 @@
         <class>jpaBook.jpaShop.domain.Item</class>
         <class>jpaBook.jpaShop.domain.Order</class>
         <class>jpaBook.jpaShop.domain.OrderItem</class>
+        <class>jpaBook.jpaShop.domain.Delivery</class>
+        <class>jpaBook.jpaShop.domain.Category</class>
 
         <properties>
             <!-- 필수 속성 -->
