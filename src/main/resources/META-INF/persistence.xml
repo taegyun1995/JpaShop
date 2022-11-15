@@ -14,6 +14,9 @@
         <class>jpaBook.jpaShop.domain.OrderItem</class>
         <class>jpaBook.jpaShop.domain.Delivery</class>
         <class>jpaBook.jpaShop.domain.Category</class>
+        <class>jpaBook.jpaShop.domain.Album</class>
+        <class>jpaBook.jpaShop.domain.Book</class>
+        <class>jpaBook.jpaShop.domain.Movie</class>
 
         <properties>
             <!-- 필수 속성 -->
