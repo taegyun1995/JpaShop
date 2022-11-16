@@ -1,7 +1,9 @@
 package jpaBook.jpaShop;
 
+import jpaBook.jpaShop.domain.Book;
 import jpaBook.jpaShop.domain.Member;
 import jpaBook.jpaShop.domain.Order;
+import jpaBook.jpaShop.domain.OrderItem;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -17,12 +19,10 @@ public class JpaMain {
         tx.begin();
 
         try {
-
-            Order order = em.find(Order.class, 1L);
-            Long memberId = order.getMemberId();
-
-            Member member = em.find(Member.class, memberId);
-            Member findMember = order.getMember();
+            Book book = new Book();
+            book.setName("JPA");
+            book.setAuthor("rladfa");
+            em.persist(book);
 
             tx.commit();
         } catch (Exception e) {
